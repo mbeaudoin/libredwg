@@ -1143,7 +1143,7 @@ bit_read_CRC(Bit_Chain * dat)
   return result;
 }
 
-/** Read and check CRC-number.
+/** Read and check CRC-number, from start_address until dat->byte.
  */
 int
 bit_check_CRC(Bit_Chain * dat, long unsigned int start_address,
